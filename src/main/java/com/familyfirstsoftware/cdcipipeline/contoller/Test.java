@@ -20,5 +20,10 @@ public class Test {
         return ResponseEntity.ok().body(Map.of("Status", "Up"));
     }
 
+    @GetMapping("/hello")
+    public ResponseEntity<Map<String, String>> Hello() {
+        return ResponseEntity.ok().body(Map.of("Hello", "World"));
+    }
+
 
 }
